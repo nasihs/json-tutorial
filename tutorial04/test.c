@@ -1,3 +1,4 @@
+#include <setjmp.h>
 #ifdef _WINDOWS
 #define _CRTDBG_MAP_ALLOC
 #include <crtdbg.h>
@@ -269,6 +270,7 @@ static void test_access() {
 }
 
 int main() {
+    printf("tutorial04 test\n");
 #ifdef _WINDOWS
     _CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 #endif
